@@ -306,10 +306,10 @@ a {
 
 
 /* || LARGE SCREENS */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
     .main {
         display: grid;
-        grid-template-columns: 1fr 40rem;
+        grid-template-columns: 2fr 1fr;
     }
 
     .updates {
