@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | The Odin Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar__heading">
+            <span class="iconify logo" data-icon="mdi-view-dashboard"></span>
+            <h1 class="sidebar__title">Dashboard</h1>
+        </div>
+
+        <ul class="sidebar__nav-list">
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-home"></span> Home</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-card-account-details"></span> Profile</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-message-reply"></span> Messages</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-clock-time-three"></span> History</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-note-multiple"></span> Tasks</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-account-group"></span> Communities</a>
+            </li>
+        </ul>
+
+        <ul class="sidebar__nav-list">
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-cog"></span> Settings</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-help-box"></span> Support</a>
+            </li>
+            <li>
+                <a href="#"><span class="iconify" data-icon="mdi-shield-check"></span> Privacy</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="header">
+        <section class="page-header">
+            <div class="search-control">
+                <label for="page-search"><span class="iconify" data-icon="mdi-magnify"></span></label>
+                <input type="search" name="page-search" id="page-search">
+            </div>
+
+            <div class="user-menu">
+                <span class="iconify" data-icon="mdi-bell-ring-outline"></span>
+                <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                <p class="user-name page-header__user-name">Morgan Oakley</p>
+            </div>
+        </section>
+
+        <section class="content-header">
+            <div class="user-info">
+                <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                <div class="user-info__text">
+                    <p>Hi there,</p>
+                    <p class="user-name">Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="content-header__actions">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="main">
+        <section class="projects">
+            <h2>Your Projects</h2>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+            <article class="card">
+                <div class="card__content">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+
+            <article class="card">
+                <div class="card__content">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo earum possimus non laudantium in.</p>
+                </div>
+                <footer class="card__actions">
+                    <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                    <span class="iconify" data-icon="mdi-share-variant-outline"></span>
+                </footer>
+            </article>
+        </section>
+
+        <aside class="updates">
+            <section class="announcements">
+                <h2>Announcements</h2>
+
+                <article class="card">
+                    <ul class="card__content-list">
+                        <li class="card__content">
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium quibusdam nobis similique tenetur eos?</p>
+                        </li>
+                        <li class="card__content">
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium quibusdam nobis similique tenetur eos?</p>
+                        </li>
+                        <li class="card__content">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium quibusdam nobis similique tenetur eos?</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="trending">
+                <h2>Trending</h2>
+
+                <article class="card">
+                    <ul class="card__content-list">
+                        <li class="user-info">
+                            <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                            <div class="user-info__text">
+                                <p class="user-handle">@tegan</p>
+                                <p class="user-tagline">World Peace Builder</p>
+                            </div>
+                        </li>
+                        <li class="user-info">
+                            <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                            <div class="user-info__text">
+                                <p class="user-handle">@morgan</p>
+                                <p class="user-tagline">Super Cool Project</p>
+                            </div>
+                        </li>
+                        <li class="user-info">
+                            <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                            <div class="user-info__text">
+                                <p class="user-handle">@kendall</p>
+                                <p class="user-tagline">Life Changing App</p>
+                            </div>
+                        </li>
+                        <li class="user-info">
+                            <img src="images/profile-placeholder.svg" alt="profile picture" class="profile-pic">
+                            <div class="user-info__text">
+                                <p class="user-handle">@alex</p>
+                                <p class="user-tagline">No Traffic Maker</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>
