@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-    --sky-500: #0ea5e9;
+    --primary-500: #0ea5e9;
     --secondary-400: #facc15;
+    --neutral-50: #f8fafc;
+    --neutral-200: #e2e8f0;
+    --neutral-500: #64748b;
+    --neutral-800: #1e293b;
 
-    --slate-50: #f8fafc;
-    --slate-200: #e2e8f0;
-    --slate-500: #64748b;
-    --slate-800: #1e293b;
+    --fs-icon: 3rem;
 
     --padding-container: 2.4rem;
-    --fs-icon: 3rem;
     --gap-icon: 1em;
 }
 
@@ -38,28 +38,58 @@ button {
 
 /* || GENERAL STYLES */
 body {
-    color: var(--slate-500);
+    color: var(--neutral-500);
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
 h1, h2, h3 {
-    color: var(--slate-800);
+    color: var(--neutral-800);
 }
 
 a {
-    color: var(--sky-500);
+    color: var(--primary-500);
 }
 
 .iconify {
     font-size: var(--fs-icon);
 }
 
+.profile-pic {
+    background-color: var(--secondary-400);
+    border-radius: 50%;
+}
+
+.card {
+    background-color: var(--neutral-50);
+    border-radius: 0.5em;
+    box-shadow: rgb(30, 41, 59, 0.1) 0px 4px 12px;
+    padding: var(--padding-container);
+}
+
+.card__content-list {
+    list-style: none;
+}
+
+.card__content :where(h3, p) + p {
+    margin-top: 0.3em;
+}
+
+.card__actions {
+    color: var(--neutral-800);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 4.8rem);
+    grid-template-rows: 4.8rem;
+    justify-content: end;
+    justify-items: center;
+    align-items: center;
+}
+
 
 /* || NAVIGATION SIDEBAR */
 .sidebar {
-    background-color: var(--sky-500);
+    background-color: var(--primary-500);
     padding: var(--padding-container);
     display: grid;
     align-content: start;
@@ -68,8 +98,8 @@ a {
 
 .logo,
 .sidebar__title {
-    color: var(--slate-50);
-    font-size: 3.2rem;
+    color: var(--neutral-50);
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -88,7 +118,7 @@ a {
 }
 
 .sidebar__nav-list a {
-    color: var(--slate-50);
+    color: var(--neutral-50);
     font-weight: bold;
     text-decoration: none;
 }
@@ -96,7 +126,8 @@ a {
 
 /* || HEADER */
 .header {
-    background-color: var(--slate-50);
+    background-color: var(--neutral-50);
+    box-shadow: rgb(30, 41, 59, 0.1) 0px 4px 12px;
 }
 
 .page-header,
@@ -120,12 +151,12 @@ a {
 .search-control input {
     border: none;
     border-radius: 5em;
-    background-color: var(--slate-200);
+    background-color: var(--neutral-200);
     padding: 0.5em 1em;
 }
 
 .user-menu {
-    color: var(--slate-800);
+    color: var(--neutral-800);
     display: grid;
     grid-template-columns: 4.8rem 4.8rem auto;
     justify-content: end;
@@ -135,7 +166,7 @@ a {
 }
 
 .user-name {
-    color: var(--slate-800);
+    color: var(--neutral-800);
     font-weight: bold;
 }
 
@@ -166,8 +197,8 @@ a {
 .content-header__actions button {
     border: none;
     border-radius: 5em;
-    background-color: var(--sky-500);
-    color: var(--slate-50);
+    background-color: var(--primary-500);
+    color: var(--neutral-50);
     font-weight: bold;
     padding: 0.6em;
 }
@@ -175,36 +206,11 @@ a {
 
 /* || MAIN CONTENT */
 .main {
-    background-color: var(--slate-200);
+    background-color: var(--neutral-200);
 }
 
 .main h2 {
     grid-column: 1 / -1;
-}
-
-.card {
-    background-color: var(--slate-50);
-    border-radius: 0.5em;
-    box-shadow: rgb(30, 41, 59, 0.1) 0px 4px 12px;
-    padding: var(--padding-container);
-}
-
-.card__content-list {
-    list-style: none;
-}
-
-.card__content :where(h3, p) + p {
-    margin-top: 0.3em;
-}
-
-.card__actions {
-    color: var(--slate-800);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 4.8rem);
-    grid-template-rows: 4.8rem;
-    justify-content: end;
-    justify-items: center;
-    align-items: center;
 }
 
 
@@ -218,6 +224,10 @@ a {
     align-content: start;
     align-items: start;
     gap: var(--padding-container);
+}
+
+.projects .card {
+    border-left: 0.5rem solid var(--secondary-400);
 }
 
 
@@ -243,7 +253,7 @@ a {
 /* Announcements */
 .announcements .card__content {
     padding: 1em 0;
-    border-bottom: 0.1rem solid var(--slate-500);
+    border-bottom: 0.1rem solid var(--neutral-500);
 }
 
 .announcements .card__content:last-child {
@@ -260,7 +270,7 @@ a {
 }
 
 .trending .user-handle {
-    color: var(--slate-800);
+    color: var(--neutral-800);
     font-weight: bold;
 }
 
