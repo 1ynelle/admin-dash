@@ -10,3 +10,8 @@ Submission for [TOP's Admin Dashboard Project](https://www.theodinproject.com/le
 - Prefer flexbox for areas where content defines layout
 
 HTML/CSS
+
+---
+
+#### Image Credits:
+[😺 Cat Avatars](https://github.com/Laosing/cute-cat-avatars)
