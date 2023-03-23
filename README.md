@@ -4,6 +4,8 @@ Submission for [TOP's Admin Dashboard Project](https://www.theodinproject.com/le
 
 **[🔗 Live Preview](https://1ynelle.github.io/admin-dash/)**
 
+<img src="/images/admin-dash_top.png" alt="Library Site Image Preview" width="600">
+
 #### Learned:
 
 - CSS Grid
